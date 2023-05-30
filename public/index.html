@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="/index.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navLink">
+                <ul>
+                    <li><a href="">Profil</a></li>
+                    <li><a href="">Compétences</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+        <div class="titlePhoto">
+            <div class="title">
+                <h1>Boualem DAHMANE</h1>
+                <h3>Développeur <span></span></h3>
+    
+                <div class="profil">
+                    <p class="profilText">
+                      Passioné par les nouvelles technologies et leurs facultés à améliorer la productivité des entreprises
+                    </p>
+                    <button class="profilBtn" onclick="apparition()">
+                      <p>Plus d'infos</p>  
+                    </button>
+                    <p id="textCache" class="textHidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestias hic incidunt corporis, quos dicta, numquam earum aut maiores, dolorum doloribus itaque? Dolore delectus esse deleniti minima, laborum cum nesciunt consequuntur deserunt eius voluptatem, officiis numquam, nemo ducimus quis modi!</p>
+                </div>
+            </div>
+            <div class="photo">
+                <img src="/src/media/photo.jpg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="competences">
+        <h2>Compétences</h2>
+        <div class="skills">
+            <div class="skillsContent skillsFront">
+                <h3>Front-end</h3>
+                <ul>
+                    <li><img src="/src/media/skills/html.png" alt="" srcset=""></li>
+                    <li><img src="/src/media/skills/css.png" alt="" srcset=""></li>
+                    <li><img src="/src/media/skills/js.png" alt="" srcset=""></li>
+                    <li><img src="/src/media/skills/atom.png" alt="" srcset=""></li>
+                    
+                </ul>
+            </div>
+            <div class="skillsContent skillsBack">
+                <h3 class="reveal">Back-end</h3>
+                <ul>
+                    <li><img src="/src/media/skills/php.png" alt="" srcset=""></li>
+                    <li><img src="/src/media/skills/symfony.png" alt=""></li>
+                    <li><img src="/src/media/skills/mysql.png" alt=""></li>
+                    <li><img src="/src/media/skills/python.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="softSkills">
+            <h3 class="reveal">Soft skills</h3>
+            <ul>
+                <li><img src="/src/media/skills/figma.png" alt="" srcset=""></li>
+                <li><img src="/src/media/skills/git.png" alt=""></li>
+                <li><img src="/src/media/skills/github.png" alt=""></li>
+                <li><img src="/src/media/skills/seo.png" alt=""></li>
+            </ul>
+        </div>
+    </section>
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <h3>Ci-dessous, quelques exemples de réalisations effectuées durant la formation, le stage et plus encore :</h3>
+        <div class="projets">
+            <div class="listeProjets ">
+                <div class="listeProjetsContent">
+                    <div class="projetFront">
+                        <img src="/src/media/projects/projet1.jpg" alt="">
+                    </div>
+                    <div class="projetBack">
+                        <p>Technos utilisées :</p>
+                        <p>JavaScript</p>
+                        <p>sass</p>
+                        <p>php</p>
+                    </div>
+                </div>
+            </div>
+            <div class="listeProjets ">
+                <div class="listeProjetsContent">
+                    <div class="projetFront">
+                        <img src="/src/media/projects/projet2.jpg" alt="">
+                    </div>
+                    <div class="projetBack">
+                        <p>Technos utilisées :</p>
+                        <p>JavaScript</p>
+                        <p>sass</p>
+                        <p>php</p>
+                    </div>
+                </div>
+            </div>
+            <div class="listeProjets ">
+                <div class="listeProjetsContent">
+                    <div class="projetFront">
+                        <img src="/src/media/projects/projet3.jpg" alt="">
+                    </div>
+                    <div class="projetBack">
+                        <p>Technos utilisées :</p>
+                        <p>JavaScript</p>
+                        <p>sass</p>
+                        <p>php</p>
+                    </div>
+                </div>
+            </div>
+            <div class="listeProjets ">
+                <div class="listeProjetsContent">
+                    <div class="projetFront">
+                        <img src="/src/media/projects/projet4.jpg" alt="">
+                    </div>
+                    <div class="projetBack">
+                        <p>Technos utilisées :</p>
+                        <p>JavaScript</p>
+                        <p>sass</p>
+                        <p>php</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="contact">
+        <h2>Contactez-moi</h2>
+        <div class="contactContent">
+            <div class="liensSociaux">
+                <h2>
+                    <span>
+                        Un projet ?
+                    <br>
+                    <br>
+                    Des suggestions ?
+                    </span> 
+                    <ul>
+                        <li><a href="" type="mail"><img src="/src/media/contact/mail.png" alt=""></a></li>
+                        <li><a href=""><img src="/src/media/contact/linkedin.png" alt=""></a></li>
+                        <li><a href=""><img src="/src/media/contact/github.png" alt=""></a></li>
+                    </ul>
+                </h2>
+                
+             </div>     
+             <div class="formulaire">
+                <form id="myForm" action="" method="">
+                    <label for="prenomInput">Prénom</label>
+                    <input type="text" name="prenom" id="prenomInput" placeholder="Votre prénom">
+                    <label for="nomInput">Nom</label>
+                    <input type="text" name="nom" id="nomInput" placeholder="Votre nom">
+                    <label for="emailInput">Email</label>
+                    <input type="text" name="email" id="emailInput" placeholder="email@mail.com">
+                    <label for="messageInput">Message</label>
+                    <textarea name="message" id="messageInput" cols="30" rows="10" placeholder="écrivez votre message ici"></textarea>
+    
+                    <button type="submit">Envoyer</button>
+                </form>
+             </div> 
+        </div>
+           
+    </section>
+
+</html>

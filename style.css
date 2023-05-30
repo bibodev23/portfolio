@@ -15,7 +15,7 @@ body li {
 
 header {
   color: #A3A7A5;
-  background: url(/public/media/bg2.jpg) center/cover;
+  background: url(src/media/bg2.jpg) center/cover;
 }
 header nav {
   display: flex;
@@ -191,7 +191,7 @@ section h2 {
 }
 
 .portfolio {
-  background: url(/public/media/bg7.jpg) center/cover;
+  background: url(src/media/bg7.jpg) center/cover;
   text-align: center;
 }
 .portfolio h3 {
@@ -246,7 +246,7 @@ section h2 {
 }
 
 .contact {
-  background: url(/public/media/bg5.jpg) center/cover;
+  background: url(src/media/bg5.jpg) center/cover;
   color: burlywood;
 }
 .contact .contactContent {

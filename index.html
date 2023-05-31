@@ -8,36 +8,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-    <script src="/index.js" defer></script>
+    <script src="src/index.js" defer></script>
     
 </head>
 <body>
     <header>
         <nav>
-            <div class="navLink">
-                <ul>
-                    <li><a href="">Profil</a></li>
-                    <li><a href="">Compétences</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
+            <div class="navWide">
+                <div class="wideDiv">
+                    <a href="">Profil</a>
+                    <a href="">Compétences</a>
+                    <a href="">Portfolio</a>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+
+            <div class="navNarrow">
+                <i class="fa fa-bars fa-2x"></i>
+                <div class="narrowLinks hidden">
+                    <a href=""><i class="fa fa-home"></i></a>
+                    <a href=""><i class="fa fa-calendar"></i></a>
+                    <a href=""><i class="fa fa-phone"></i></a>
+                    <a href=""><i class="fa fa-phone"></i></a>
+                </div>
             </div>
         </nav>
     
         <div class="titlePhoto">
             <div class="title">
                 <h1>Boualem DAHMANE</h1>
-                <h3>Développeur <span></span></h3>
+                <h3>Développeur <div class="hidden">Front-end</div> <span></span></h3>
     
                 <div class="profil">
                     <p class="profilText">
                       Passioné par les nouvelles technologies et leurs facultés à améliorer la productivité des entreprises
                     </p>
                     <button class="profilBtn" onclick="apparition()">
-                      <p>Plus d'infos</p>  
+                      Plus d'infos 
                     </button>
                     <p id="textCache" class="textHidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestias hic incidunt corporis, quos dicta, numquam earum aut maiores, dolorum doloribus itaque? Dolore delectus esse deleniti minima, laborum cum nesciunt consequuntur deserunt eius voluptatem, officiis numquam, nemo ducimus quis modi!</p>
                 </div>
@@ -71,7 +82,7 @@
                 </ul>
             </div>
         </div>
-        <div class="softSkills">
+        <div class="skillsContent softSkills">
             <h3 class="reveal">Soft skills</h3>
             <ul>
                 <li><img src="src/media/skills/figma.png" alt="" srcset=""></li>
@@ -144,20 +155,9 @@
         <h2>Contactez-moi</h2>
         <div class="contactContent">
             <div class="liensSociaux">
-                <h2>
-                    <span>
-                        Un projet ?
-                    <br>
-                    <br>
-                    Des suggestions ?
-                    </span> 
-                    <ul>
-                        <li><a href="" type="mail"><img src="/src/media/contact/mail.png" alt=""></a></li>
-                        <li><a href=""><img src="src/media/contact/linkedin.png" alt=""></a></li>
-                        <li><a href=""><img src="src/media/contact/github.png" alt=""></a></li>
-                    </ul>
-                </h2>
-                
+                        <a href="" type="mail"><img src="/src/media/contact/mail.png" alt=""></a>
+                        <a href=""><img src="src/media/contact/linkedin.png" alt=""></a>
+                        <a href=""><img src="src/media/contact/github.png" alt=""></a>
              </div>     
              <div class="formulaire">
                 <form id="myForm" action="" method="">
@@ -173,8 +173,6 @@
                     <button type="submit">Envoyer</button>
                 </form>
              </div> 
-        </div>
-           
+        </div> 
     </section>
-
 </html>

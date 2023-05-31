@@ -13,43 +13,50 @@ body li {
   list-style-type: none;
 }
 
-header {
-  color: #A3A7A5;
-  background: url(src/media/bg2.jpg) center/cover;
+nav {
+  overflow: hidden;
+  padding: 1em;
+  opacity: 0.8;
+  font-weight: 800;
 }
-header nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 1px 1px black;
+nav a {
+  color: #A3A7A5;
+}
+nav .navWide {
+  display: none;
+  margin: 0 auto;
+}
+nav .navWide .wideDiv a {
+  padding: 0 2em;
+}
+nav .navNarrow i {
+  float: left;
+  cursor: pointer;
+}
+nav .navNarrow .narrowLinks a {
+  display: block;
+  float: left;
+  clear: left;
+  padding: 0.5em 0;
   font-size: 20px;
-  padding: 0 100px;
+  color: burlywood;
 }
-header nav ul {
-  display: flex;
-  list-style: none;
-}
-header nav ul li {
-  margin: 25px 0;
-  transition: 0.8s;
-}
-header nav ul li a {
-  text-decoration: none;
-  margin: 10px;
-  padding: 10px;
-  color: #A3A7A5;
-  font-weight: 700;
-}
-header nav ul li a:hover {
-  color: rgb(130, 88, 64);
-}
-header nav ul li:hover {
-  scale: 1.2;
+nav .navNarrow .hidden {
+  display: none;
 }
 
+@media (min-width: 480px) {
+  nav .navWide {
+    display: block;
+  }
+  nav .navNarrow {
+    display: none;
+  }
+}
 header {
+  color: #A3A7A5;
+  background: url(/src/media/bg2.jpg) center/cover;
   height: 100vh;
-  text-align: left;
 }
 header .titlePhoto {
   display: flex;
@@ -82,6 +89,9 @@ header .titlePhoto .title h3 {
   margin-bottom: 30px;
   animation: h3 3s;
   color: rgb(130, 88, 64);
+}
+header .titlePhoto .title h3 .hidden {
+  display: none;
 }
 header .titlePhoto .title h3 span {
   font-size: 40px;
@@ -153,6 +163,68 @@ header .titlePhoto .photo img {
   }
 }
 
+@media (max-width: 480px) {
+  header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  header .titlePhoto {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+  header .titlePhoto .title {
+    margin: 0 auto;
+    width: 90%;
+  }
+  header .titlePhoto .title h1 {
+    animation: none;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+  }
+  header .titlePhoto .title h3 {
+    animation: none;
+    font-size: 20px;
+    color: #A3A7A5;
+    text-align: center;
+  }
+  header .titlePhoto .title h3 span {
+    display: none;
+  }
+  header .titlePhoto .title .profil {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  header .titlePhoto .title .profil button {
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 8px;
+    width: 50%;
+    margin: 20px auto;
+  }
+  header .titlePhoto .title .profil p {
+    text-align: center;
+    width: 100%;
+  }
+  header .titlePhoto .photo {
+    padding: 0;
+    margin: 0 auto;
+  }
+  header .titlePhoto .photo img {
+    max-height: 150px;
+    animation: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+}
 section {
   padding: 250px 0;
   color: burlywood;
@@ -190,8 +262,38 @@ section h2 {
   margin-top: 150px;
 }
 
+@media (max-width: 480px) {
+  .competences {
+    padding: 0;
+    padding-bottom: 30px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .competences h2 {
+    margin-top: 50px;
+    padding: 0;
+  }
+  .competences .skills {
+    display: flex;
+    flex-direction: column;
+  }
+  .competences .skillsContent img {
+    max-height: 50px;
+  }
+  .competences .skillsContent ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .competences .skillsFront {
+    margin-bottom: 100px;
+  }
+  .competences .softSkills {
+    margin-top: 100px;
+  }
+}
 .portfolio {
-  background: url(src/media/bg7.jpg) center/cover;
+  background: url(src/media/bg3.jpg) center/cover;
   text-align: center;
 }
 .portfolio h3 {
@@ -245,6 +347,25 @@ section h2 {
   box-shadow: 2px 1px 20px 8px rgb(158, 158, 158);
 }
 
+@media (max-width: 480px) {
+  .portfolio {
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    width: 95%;
+  }
+  .portfolio h2 {
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  .projets {
+    display: flex;
+    flex-direction: column;
+  }
+  .projets img {
+    max-width: 250px;
+  }
+}
 .contact {
   background: url(src/media/bg5.jpg) center/cover;
   color: burlywood;
@@ -313,4 +434,66 @@ section h2 {
   color: #A3A7A5;
   background: rgb(255, 255, 255);
   font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  .contact {
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact h2 {
+    margin: 20px 0;
+    padding: 0;
+  }
+  .contact .contactContent {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact .contactContent .liensSociaux {
+    height: 50px;
+    padding: 0;
+    margin: 0 auto 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .contact .contactContent .liensSociaux a {
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    width: 50px;
+  }
+  .contact .contactContent .liensSociaux a img {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+  }
+  .contact .contactContent .formulaire {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 95%;
+  }
+  .contact .contactContent .formulaire #myForm {
+    margin: 0 auto 20px;
+    padding: 0;
+    width: 60%;
+    text-align: left;
+  }
+  .contact .contactContent .formulaire #myForm label {
+    padding: 0;
+    margin: 0;
+  }
+  .contact .contactContent .formulaire #myForm input, .contact .contactContent .formulaire #myForm textarea {
+    margin: 10px 0;
+    padding: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */

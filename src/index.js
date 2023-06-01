@@ -20,11 +20,6 @@ form.addEventListener("submit", function(event) {
     const email = document.getElementById("emailInput").value;
     const message = document.getElementById("messageInput").value;
 
-    console.log("Prénom: " + prenom);
-    console.log("Nom: " + nom);
-    console.log("Email: " + email);
-    console.log("Message: " + message);
-
     let erreurs = [];
     if (prenom.trim() ==="") {
         erreurs.push("Le prenom est requis");

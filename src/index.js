@@ -1,5 +1,3 @@
-
-
 const firebaseConfig = {
   apiKey: "AIzaSyDz-qIalLSfb8EdqRl4C-4GF1s5yhfAE4o",
   authDomain: "portfolio-f5274.firebaseapp.com",
@@ -43,12 +41,22 @@ form.addEventListener("submit", function(event) {
             alert(erreur);
         })
     } else {
-            db.collection("formData").add({
+            const date_envoi = new Date();
+
+            db.collection("formData")
+            .add({
             prenom: prenom,
             nom: nom,
             email: email,
-            message: message
+            message: message,
+            dateEnvoi: date_envoi
           })
+            .then(function () {
+                alert("Vos message a été envoyé avec succès");
+            })
+            .catch (function (error) {
+                alert("erreur de l'envoi : ", error)
+            })
     }
 
     function isValidEmail(email) {

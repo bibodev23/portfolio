@@ -1,11 +1,13 @@
+
+
 const firebaseConfig = {
-    apiKey: "AIzaSyDz-qIalLSfb8EdqRl4C-4GF1s5yhfAE4o",
-    authDomain: "portfolio-f5274.firebaseapp.com",
-    projectId: "portfolio-f5274",
-    storageBucket: "portfolio-f5274.appspot.com",
-    messagingSenderId: "281385654496",
-    appId: "1:281385654496:web:0d4957e2a47b3c0cb2d885",
-    measurementId: "G-D0X8PF0H1W"
+  apiKey: "AIzaSyDz-qIalLSfb8EdqRl4C-4GF1s5yhfAE4o",
+  authDomain: "portfolio-f5274.firebaseapp.com",
+  projectId: "portfolio-f5274",
+  storageBucket: "portfolio-f5274.appspot.com",
+  messagingSenderId: "281385654496",
+  appId: "1:281385654496:web:0d4957e2a47b3c0cb2d885",
+  measurementId: "G-D0X8PF0H1W"
 };
 
 firebase.initializeApp(firebaseConfig);

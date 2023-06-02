@@ -4,7 +4,6 @@
 }
 
 html {
-  --scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 
@@ -13,6 +12,9 @@ body {
   background-color: #1a1b1b;
   color: white;
   text-align: center;
+  width: 95%;
+  scroll-snap-type: y proximity;
+  scroll-padding: 100px;
 }
 body li {
   list-style-type: none;
@@ -56,6 +58,10 @@ nav .navNarrow .hidden {
 }
 
 @media (min-width: 480px) {
+  body {
+    width: 95%;
+    margin: 0 auto;
+  }
   nav .navWide {
     display: block;
   }
@@ -532,6 +538,8 @@ footer p {
 
 @media (max-width: 480px) {
   footer {
+    width: 95%;
+    margin: 0 auto;
     padding-top: 10px;
   }
   footer p {

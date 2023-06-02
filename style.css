@@ -12,9 +12,7 @@ body {
   background-color: #1a1b1b;
   color: white;
   text-align: center;
-  width: 95%;
-  scroll-snap-type: y proximity;
-  scroll-padding: 100px;
+  width: 100%;
 }
 body li {
   list-style-type: none;
@@ -39,15 +37,15 @@ nav .navWide .wideDiv a {
 }
 nav .navWide .wideDiv a:hover {
   color: burlywood;
-  font-size: 21px;
 }
 nav .navNarrow i {
-  float: left;
+  float: center;
   cursor: pointer;
+  color: burlywood;
 }
 nav .navNarrow .narrowLinks a {
   display: block;
-  float: left;
+  float: center;
   clear: left;
   padding: 0.5em 0;
   font-size: 20px;
@@ -58,10 +56,6 @@ nav .navNarrow .hidden {
 }
 
 @media (min-width: 480px) {
-  body {
-    width: 95%;
-    margin: 0 auto;
-  }
   nav .navWide {
     display: block;
   }
@@ -71,8 +65,9 @@ nav .navNarrow .hidden {
 }
 header {
   color: #A3A7A5;
-  background: url(/src/media/bg2.jpg) center/cover;
+  background: url(src/media/bg2.jpg) center/cover;
   height: 100vh;
+  width: 100%;
 }
 header .titlePhoto {
   display: flex;
@@ -180,6 +175,10 @@ header .titlePhoto .photo img {
 }
 
 @media (max-width: 480px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
   header {
     width: 100%;
     margin: 0 auto;
@@ -195,7 +194,7 @@ header .titlePhoto .photo img {
   }
   header .titlePhoto .title {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
   }
   header .titlePhoto .title h1 {
     animation: none;
@@ -213,7 +212,7 @@ header .titlePhoto .photo img {
     display: none;
   }
   header .titlePhoto .title .profil {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -226,8 +225,9 @@ header .titlePhoto .photo img {
     margin: 20px auto;
   }
   header .titlePhoto .title .profil p {
-    text-align: center;
-    width: 100%;
+    text-align: justify;
+    width: 75%;
+    margin: 0 auto;
   }
   header .titlePhoto .photo {
     padding: 0;
@@ -290,6 +290,10 @@ section h2 {
     margin-top: 50px;
     padding: 0;
   }
+  .competences h3 {
+    margin: 0 0 30px;
+    padding: 0;
+  }
   .competences .skills {
     display: flex;
     flex-direction: column;
@@ -300,6 +304,9 @@ section h2 {
   .competences .skillsContent ul {
     display: flex;
     flex-wrap: wrap;
+  }
+  .competences .skillsContent ul li {
+    margin-bottom: 30px;
   }
   .competences .skillsFront {
     margin-bottom: 100px;
@@ -387,7 +394,10 @@ section h2 {
     max-width: 250px;
   }
   .projets .projetBack {
-    width: 100px;
+    transform: rotateY(180deg);
+    width: 200px;
+    height: 200px;
+    left: 150px;
   }
 }
 .contact {
@@ -459,7 +469,7 @@ section h2 {
 
 @media (max-width: 480px) {
   .contact {
-    width: 95%;
+    width: 100%;
     padding: 0;
     margin: 0 auto;
     display: flex;
@@ -523,29 +533,30 @@ section h2 {
   }
 }
 footer {
-  height: 200px;
-  background: rgba(14, 14, 14, 0.336);
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-footer i {
-  margin-right: 50px;
+footer ul {
+  width: 25%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  color: burlywood;
+  font-weight: 700;
 }
-footer p {
-  margin: 0 50px 0 0;
+footer ul li {
+  cursor: pointer;
 }
 
 @media (max-width: 480px) {
   footer {
-    width: 95%;
-    margin: 0 auto;
-    padding-top: 10px;
+    width: 100%;
   }
-  footer p {
-    margin: 10px;
-  }
-  footer i {
-    margin: 0;
+  footer ul {
+    width: 100%;
+    display: flex;
+    font-size: 13px;
   }
 }/*# sourceMappingURL=style.css.map */

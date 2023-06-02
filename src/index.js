@@ -1,3 +1,9 @@
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0X8PF0H1W');
+
+
 const firebaseConfig = {
   apiKey: "AIzaSyDz-qIalLSfb8EdqRl4C-4GF1s5yhfAE4o",
   authDomain: "portfolio-f5274.firebaseapp.com",
@@ -52,7 +58,7 @@ form.addEventListener("submit", function(event) {
             dateEnvoi: date_envoi
           })
             .then(function () {
-                alert("Vos message a été envoyé avec succès");
+                alert("Votre message a été envoyé avec succès");
             })
             .catch (function (error) {
                 alert("erreur de l'envoi : ", error)

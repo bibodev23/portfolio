@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
@@ -18,7 +15,13 @@
     
 </head>
 <body>
+    <video id="header-video" autoplay loop muted>
+        <source src="src/media/video2.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos HTML5.
+      </video>
     <header>
+
+        
         <nav>
             <div class="navWide">
                 <div class="wideDiv">
@@ -42,17 +45,17 @@
     
         <div class="titlePhoto">
             <div class="title">
-                <h1>Boualem DAHMANE</h1>
+                <h1><span>Boualem</span>  DAHMANE</h1>
                 <h3>Développeur <div class="hidden">Front-end</div> <span></span></h3>
     
                 <div class="profil">
                     <p class="profilText">
-                      Passioné par les nouvelles technologies et leurs facultés à améliorer la productivité des entreprises
+                      Passionné par les nouvelles technologies et leurs facultés à améliorer la productivité des entreprises
                     </p>
                     <button class="profilBtn" onclick="apparition()">
                       Plus d'infos 
                     </button>
-                    <p id="textCache" class="textHidden">Après une expèrience de 8 ans en administratif bancaire, j'ai décidé de vire de ma passion, le développement web. La veille technologique et l'auto-formation me permettent de livrer / déployer des projets en constante amélioration. </p>
+                    <p id="textCache" class="textHidden">Après une expèrience de 8 ans en administratif bancaire, j'ai décidé de vire de ma passion, le développement web. La veille technologique et l'auto-formation me permettent d'avoir un code en constante amélioration. </p>
                 </div>
             </div>
             <div class="photo">
@@ -93,8 +96,13 @@
                 <li><img src="src/media/skills/seo.png" alt=""></li>
             </ul>
         </div>
+
+        <div class="button">
+            <a href="src/media/CV Boualem Dahmane.pdf" target="_blank"><button>Téléchargez mon cv</button></a>
+        </div>
     </section>
     <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
         <div class="projets">
             <div class="listeProjets ">
                 <div class="listeProjetsContent">
@@ -103,8 +111,8 @@
                     </div>
                     <div class="projetBack">
                         <p>Technos utilisées :</p>
-                        <p>JavaScript</p>
-                        <p>sass</p>
+                        <p>HTML</p>
+                        <p>CSS</p>
                     </div>
                 </div>
             </div>
@@ -115,8 +123,8 @@
                     </div>
                     <div class="projetBack">
                         <p>Technos utilisées :</p>
-                        <p>JavaScript</p>
-                        <p>sass</p>
+                        <p>HTML</p>
+                        <p>CSS</p>
                     </div>
                 </div>
             </div>
@@ -127,8 +135,9 @@
                     </div>
                     <div class="projetBack">
                         <p>Technos utilisées :</p>
+                        <p>HTML</p>
+                        <p>CSS</p>
                         <p>JavaScript</p>
-                        <p>sass</p>
                     </div>
                 </div>
             </div>
